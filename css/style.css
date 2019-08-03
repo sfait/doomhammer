@@ -75,6 +75,11 @@ body {
 .header-wrapper a {
     color: var(--second-color);
     text-decoration: none;
+    transition: color 0.6s;
+}
+
+.header-wrapper a:hover {
+    color: var(--third-color);
 }
 
 .main-header span {
@@ -125,9 +130,17 @@ body {
     margin-bottom: 2rem;
 }
 
+.text-wrapper a {
+    color: var(--second-color);
+    transition: color 0.6s;
+}
+
+.text-wrapper a:hover {
+    color: var(--third-color);
+}
+
 .social-icons a {
     margin-left: 1rem;
-    color: var(--second-color);
     text-decoration: none;
 }
 
