@@ -38,6 +38,43 @@ body {
     border-radius: 15px;
 }
 
+/* header */
+.header {
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid var(--second-color);
+    position: absolute;
+    bottom: 0;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrapper a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.main-header span {
+    font-size: 3rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
 button {
     margin: 2rem;
     padding: 0.5rem 1.5rem;
