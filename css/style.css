@@ -2,7 +2,7 @@
 :root {
   --base-color: #fff;
   --second-color: #272727;
-  --third-color: #747474;
+  --third-color: #47D1C5;
   --fourth-color: #ff652f;
   --fifth-color: #fead26;
   --sixth-color: #14a76c;
@@ -16,15 +16,43 @@
 }
 
 body {
+    height: 100vh;
     background: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper {
-    width: 80%;
+    width: 85%;
     max-width: 1250px;
     margin: 0 auto;
     font-family: 'Varela Round', sans-serif;
 }
+
+/* website-container */
+.website-container {
+    width: 95vw;
+    height: 95vh;
+    background: var(--base-color);
+    border-radius: 15px;
+}
+
+button {
+    margin: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background: var(--second-color);
+    color: var(--base-color);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--third-color);
+}
+
 
 /* ukrycie tekstu przy ikonach */
 .sr-only {
