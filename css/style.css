@@ -1,0 +1,47 @@
+/* variables */
+:root {
+  --base-color: #fff;
+  --second-color: #272727;
+  --third-color: #747474;
+  --fourth-color: #ff652f;
+  --fifth-color: #fead26;
+  --sixth-color: #14a76c;
+  --seventh-color: rgba(234, 31, 31, 0.7);
+  --eighth-color: rgba(28, 119, 210, 0.7);
+}
+
+/* general */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--second-color);
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* ukrycie tekstu przy ikonach */
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+/* media queries*/
+@media only screen and (min-width: 700px) {
+
+}
