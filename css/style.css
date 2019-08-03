@@ -23,6 +23,20 @@ body {
     justify-content: center;
 }
 
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
 .wrapper {
     width: 85%;
     max-width: 1250px;
@@ -40,6 +54,7 @@ body {
 
 /* header */
 .header {
+    height: 15vh;
     position: relative;
 }
 
@@ -72,10 +87,57 @@ body {
 }
 
 .menu li {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
-button {
+/* about-me */
+.about-me {
+    height: 80vh;
+    display: flex;
+}
+
+.text-section {
+    height: 100%;
+    width: 50%;
+}
+
+.text-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-header {
+    margin: 3.5rem 0 1rem;
+    font-size: 3rem;
+}
+
+.third-header {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.text-wrapper-paragraph {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.social-icons a {
+    margin-left: 1rem;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.photo-wrapper {
+    width: 50%;
+    background: url("../img/photo.jpg") no-repeat center/cover;
+    border-bottom-right-radius: 15px;
+}
+
+/* button {
     margin: 2rem;
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
@@ -88,23 +150,7 @@ button {
 
 button:hover {
     background: var(--third-color);
-}
-
-
-/* ukrycie tekstu przy ikonach */
-.sr-only {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    margin: -1px !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important;
-}
+} */
 
 /* media queries*/
 @media only screen and (min-width: 700px) {
