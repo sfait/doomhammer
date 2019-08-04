@@ -16,11 +16,7 @@
 }
 
 body {
-    height: 100vh;
     background: var(--second-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .sr-only {
@@ -46,15 +42,15 @@ body {
 
 /* website-container */
 .website-container {
-    width: 95vw;
-    height: 95vh;
-    background: var(--base-color);
-    border-radius: 15px;
+    width: 95%;
+    margin: 1rem auto;
 }
 
 /* header */
 .header {
-    height: 15vh;
+    background: var(--base-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     position: relative;
 }
 
@@ -68,6 +64,7 @@ body {
 }
 
 .header-wrapper {
+    padding: 0.5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,6 +78,10 @@ body {
 
 .header-wrapper a:hover {
     color: var(--third-color);
+}
+
+.main-header {
+    margin: 0;
 }
 
 .main-header span {
@@ -128,13 +129,17 @@ body {
 
 /* about-me */
 .about-me {
-    height: 80vh;
+    background: var(--base-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-section {
-    height: 100%;
-    width: 50%;
+    width: 100%;
 }
 
 .text-wrapper {
@@ -146,7 +151,7 @@ body {
 }
 
 .second-header {
-    margin: 3.5rem 0 1rem;
+    margin: 1.5rem 0 1rem;
     font-size: 3rem;
 }
 
@@ -159,6 +164,7 @@ body {
 .text-wrapper-paragraph {
     line-height: 1.5;
     margin-bottom: 2rem;
+    font-size: 0.8rem;
 }
 
 .text-wrapper a {
@@ -170,15 +176,20 @@ body {
     color: var(--third-color);
 }
 
+.social-icons {
+    margin-bottom: 2rem;
+}
+
 .social-icons a {
     margin-left: 1rem;
     text-decoration: none;
 }
 
 .photo-wrapper {
-    width: 50%;
+    height: 50vh;
+    width: 100%;
     background: url("../img/photo.jpg") no-repeat center/cover;
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 0;
 }
 
 /* button {
@@ -197,6 +208,32 @@ button:hover {
 } */
 
 /* media queries*/
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .photo-wrapper {
+        height: 70vh;
+    }
+}
 
+@media only screen and (min-width: 800px) {
+    .about-me {
+        flex-direction: row;
+    }
+
+    .text-section {
+        width: 50%;
+    }
+
+    .second-header {
+        margin: 0 0 1rem;
+    }
+
+    .text-wrapper-paragraph {
+        font-size: 1rem;
+    }
+
+    .photo-wrapper {
+        height: 80vh;
+        width: 50%;
+        border-bottom-right-radius: 15px;
+    }
 }
