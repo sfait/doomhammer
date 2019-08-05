@@ -14,12 +14,12 @@ function showMenu() {
 }
 
 function showHamburgerMenu() {
-    const icon = document.querySelector('.hamburger');
+    const hamburger = document.querySelector('.hamburger');
     const menu = document.querySelector(".menu");
 
-    icon.addEventListener("click", function () {
-        icon.classList.toggle("active");
-        menu.classList.toggle("menu-show");
+    hamburger.addEventListener("click", function () {
+        // icon.classList.toggle("active");
+        menu.classList.toggle("show-menu");
     })
 }
 
