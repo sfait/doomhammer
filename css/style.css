@@ -102,14 +102,11 @@ body {
 .menu li {
     padding: 1rem 0;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .menu li:last-of-type {
     margin-right: 0;
-}
-
-.menu span {
-    cursor: pointer;
 }
 
 .show-menu {
