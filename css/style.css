@@ -89,15 +89,17 @@ body {
 }
 
 .menu {
+    height: 100vh;
+    background: var(--base-color);
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     display: none;
 }
 
 .menu li {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     margin-right: 1rem;
 }
 
@@ -111,6 +113,10 @@ body {
 
 .show-menu {
     display: flex;
+}
+
+.hide-header {
+    display: none;
 }
 
 .second-menu {
@@ -268,13 +274,27 @@ body {
 }
 
 /* media queries*/
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 500px) and (max-width: 720px) {
     .photo-wrapper {
         height: 70vh;
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 930px) {
+    .menu {
+        height: 5vh;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .menu li {
+        padding: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
     .about-me {
         flex-direction: row;
     }
