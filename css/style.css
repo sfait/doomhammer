@@ -346,11 +346,27 @@ body {
 }
 
 /* media queries*/
-@media only screen and (min-width: 500px) and (max-width: 720px) {
+@media only screen and (min-width: 500px) and (max-width: 649px) {
     .photo-wrapper {
         height: 70vh;
     }
 }
+
+@media only screen and (min-width: 650px) and (max-width: 929px) {
+    .about-me {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .photo-wrapper {
+        height: 100vh;
+        background-position:-300px 0;
+        border-bottom-left-radius: 15px;
+    }
+}
+
 
 @media only screen and (min-width: 930px) {
     .menu {
