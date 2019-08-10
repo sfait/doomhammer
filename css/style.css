@@ -307,7 +307,7 @@ body {
 .photo-wrapper {
     height: 50vh;
     width: 100%;
-    background: url("../img/photo2.jpg") no-repeat center/cover;
+    background: url("../img/photo.jpg") no-repeat center/cover;
     border-bottom-left-radius: 0;
 }
 
@@ -405,6 +405,10 @@ body {
 
     .text-wrapper-paragraph {
         font-size: 1rem;
+    }
+
+    .text-wrapper-paragraph span {
+        font-weight: bold;
     }
 
     .photo-wrapper {
