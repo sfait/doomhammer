@@ -398,8 +398,9 @@ body {
     }
 }
 
-@media only screen and (min-width: 650px) and (max-width: 929px) {
+@media only screen and (min-width: 650px) and (max-width: 929px) and (orientation: landscape) {
     .about-me {
+        height: 100vh;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
