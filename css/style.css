@@ -180,7 +180,11 @@ body {
     top: 15px;
     right: 30px;
     cursor: pointer;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .hamburger span {
@@ -189,7 +193,11 @@ body {
     background: var(--second-color);
     position: absolute;
     left: 0;
+    -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, -webkit-transform .2s .4s;
+    transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, -webkit-transform .2s .4s;
+    -o-transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s;
     transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s;
+    transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s, -webkit-transform .2s .4s;
 }
 
 .hamburger span:nth-of-type(0) {
@@ -354,16 +362,27 @@ body {
 }
 
 .subpages .articles-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .subpages .articles-box a {
     color: var(--second-color);
     text-decoration: none;
     line-height: 1.5;
+    -webkit-transition: color 0.6s;
+    -o-transition: color 0.6s;
     transition: color 0.6s;
 }
 
@@ -375,7 +394,7 @@ body {
 /* media queries*/
 @media only screen and (min-width: 500px) and (max-width: 649px) {
     .photo-wrapper {
-        height: 70vh;
+        height: 100vh;
     }
 }
 
