@@ -400,7 +400,6 @@ body {
 
 @media only screen and (min-width: 650px) and (max-width: 929px) and (orientation: landscape) {
     .about-me {
-        height: 100vh;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -408,6 +407,7 @@ body {
     }
 
     .photo-wrapper {
+        padding: 0;
         height: 100vh;
         border-bottom-left-radius: 15px;
     }
@@ -458,6 +458,7 @@ body {
 
     .photo-wrapper {
         height: 80vh;
+        min-height: 100%;
         width: 50%;
         border-bottom-left-radius: 15px;
     }
