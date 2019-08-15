@@ -408,8 +408,6 @@ body {
 
     .photo-wrapper {
         height: 100vh;
-        min-height: 100%;
-        background-position: -15rem 0;
         border-bottom-left-radius: 15px;
     }
 }
