@@ -248,9 +248,6 @@ body {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
                     justify-content: center;
@@ -261,6 +258,7 @@ body {
 }
 
 .text-wrapper {
+    padding: 3rem 0.5rem;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -404,6 +402,13 @@ body {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
+                -webkit-box-align: stretch;
+                    -ms-flex-align: stretch;
+                        align-items: stretch;
+    }
+
+    .text-wrapper {
+        padding: 2rem 0;
     }
 
     .photo-wrapper {
