@@ -413,8 +413,9 @@ body {
 
     .photo-wrapper {
         padding: 0;
-        height: 100vh;
-        min-height: 100%;
+        height: auto;
+        /* height: 100vh; */
+        /* min-height: 100%; */
         border-bottom-left-radius: 15px;
     }
 }
@@ -440,6 +441,7 @@ body {
     }
 
     .about-me {
+        height: 80vh;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -447,6 +449,7 @@ body {
     }
 
     .text-section {
+        /* height: 80vh; */
         width: 50%;
     }
 
@@ -463,8 +466,8 @@ body {
     }
 
     .photo-wrapper {
-        height: 80vh;
-        min-height: 100%;
+        height: auto;
+        /* height: 80vh; */
         width: 50%;
         border-bottom-left-radius: 15px;
     }
