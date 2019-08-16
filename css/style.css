@@ -398,7 +398,7 @@ body {
 
 @media only screen and (min-width: 650px) and (max-width: 929px) and (orientation: landscape) {
     .about-me {
-        height: auto;
+        height: 500px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
