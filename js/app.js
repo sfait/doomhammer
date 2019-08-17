@@ -28,8 +28,6 @@ function showHamburgerMenu() {
 const init = () => {
     showMenu();
     showHamburgerMenu();
-
-
 }
 
 document.addEventListener("DOMContentLoaded", init);

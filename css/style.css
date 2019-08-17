@@ -1,14 +1,14 @@
 /* variables */
 :root {
-  --base-color: #fff;
-  --second-color: #272727;
-  --third-color: #47D1C5;
+    --base-color: #fff;
+    --second-color: #272727;
+    --third-color: #47D1C5;
 }
 
 /* general */
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -65,11 +65,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .header-wrapper a {
@@ -94,7 +94,6 @@ body {
 }
 
 .menu {
-    /* height: 100vh; */
     background: var(--base-color);
     list-style: none;
     text-align: center;
@@ -103,8 +102,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     display: none;
 }
@@ -134,8 +133,8 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    -webkit-box-shadow: -4px 18px 35px -22px rgba(0,0,0,0.75);
-            box-shadow: -4px 18px 35px -22px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -4px 18px 35px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 18px 35px -22px rgba(0, 0, 0, 0.75);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
@@ -214,15 +213,15 @@ body {
 
 .hamburger.active {
     -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .hamburger.active span:nth-child(1) {
     top: calc(50% - 3px);
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -232,8 +231,8 @@ body {
 .hamburger.active span:nth-child(3) {
     bottom: calc(50% - 3px);
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 /* about-me */
@@ -266,10 +265,19 @@ body {
     width: 100%;
     padding: 0 2rem;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .second-header {
@@ -359,14 +367,14 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 .subpages .articles-box a {
@@ -394,8 +402,8 @@ body {
     .about-me {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 
     .text-section {
@@ -433,11 +441,10 @@ body {
 
 @media only screen and (min-width: 1000px) {
     .menu {
-        /* height: 6vh; */
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -455,8 +462,8 @@ body {
         height: 80vh;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 
     .text-section {
