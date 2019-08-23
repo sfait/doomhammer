@@ -15,10 +15,10 @@ function showMenu() {
 
 function showHamburgerMenu() {
     const hamburger = document.querySelector(".hamburger");
-    const mainHeader  = document.querySelector(".main-header");
+    const mainHeader = document.querySelector(".main-header");
     const menu = document.querySelector(".menu");
 
-    hamburger.addEventListener("click", function () {
+    hamburger.addEventListener("click", function() {
         hamburger.classList.toggle("active");
         menu.classList.toggle("show-menu");
         mainHeader.classList.toggle("hide-header");
