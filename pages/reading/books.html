@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-EN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/app.js"></script>
 </head>
-
 <body>
     <div class="website-container">
         <header class="header">
@@ -28,7 +26,7 @@
                             <span class="fas fa-caret-down"></span>
                             <ul class="second-menu">
                                 <li><a href="../reading/articles.html">Articles</a></li>
-                                <li><a href="../reading/books.html">Books</a></li>
+                                <li><a href="#">Books</a></li>
                                 <li><a href="../reading/interesting_content.html">Interesting content</a></li>
                             </ul>
                         </li>
@@ -47,7 +45,7 @@
                             <ul class="second-menu">
                                 <li><a href="..\writing\books.html">Books</a></li>
                                 <li><a href="..\writing\articles.html">Articles</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="..\writing\blog.html">Blog</a></li>
                             </ul>
                         </li>
                         <li><a href="../consulting.html">Consulting</a></li>
@@ -64,22 +62,8 @@
         <main>
             <section class="subpages">
                 <div class="subpages-wrapper wrapper">
-                    <h2 class="subpages-second-header">My Medium posts</h2>
-                    <div id="medium-widget"></div>
-                    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-                    <script>
-                        MediumWidget.Init({
-                            renderTo: '#medium-widget',
-                            params: {
-                                "resource": "https://medium.com/@doomhammerng",
-                                "postsPerLine": 3,
-                                "limit": 9,
-                                "picture": "big",
-                                "fields": ["description", "author", "claps", "publishAt"],
-                                "ratio": "square"
-                            }
-                        })
-                    </script>
+                    <h2 class="subpages-second-header">Books</h2>
+
                 </div>
             </section>
         </main>
@@ -103,5 +87,4 @@
         </footer>
     </div>
 </body>
-
 </html>
