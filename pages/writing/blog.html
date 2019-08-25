@@ -8,34 +8,30 @@
     <title>Piotr Gaczkowski</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/app.js"></script>
 </head>
 
 <body>
     <div class="website-container">
         <header class="header">
-            <div class="header-wrapper wrapper">
-                <h1 class="main-header">
-                    <a href="#">
-                        <span class="fas fa-headphones-alt" aria-hidden="true"></span>
-                        <span class="sr-only">Website Piotr Gaczkowski</span>
-                    </a>
+            <div class="header-wrapper wrapper subpages-header-wrapper">
+                <h1 class="main-header subpages-main-header">
+                    <a href="../../index.html">Piotr Gaczkowski</a>
                 </h1>
                 <nav>
                     <ul class="menu">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="../../index.html">Home</a>
                         </li>
                         <li class="first-menu">
                             Reading
                             <span class="fas fa-caret-down"></span>
                             <ul class="second-menu">
                                 <li>
-                                    <a href="pages/reading/articles.html">Articles</a>
+                                    <a href="#">Articles</a>
                                 </li>
-
                                 <li>
                                     <a href="#">Books</a>
                                 </li>
@@ -70,7 +66,7 @@
                                     <a href="#">Articles</a>
                                 </li>
                                 <li>
-                                    <a href="pages/writing/blog.html">Blog</a>
+                                    <a href="#">Blog</a>
                                 </li>
                             </ul>
                         </li>
@@ -78,7 +74,7 @@
                             <a href="#">Consulting</a>
                         </li>
                         <li>
-                            <a href="pages/about_me.html">About</a>
+                            <a href="#">About</a>
                         </li>
                     </ul>
 
@@ -91,38 +87,45 @@
             </div>
         </header>
         <main>
-            <section class="about-me">
-                <div class="photo-wrapper">
-                    <div class="photo">
-                    </div>
-                </div>
-                <div class="text-section wrapper">
-                    <h2 class="second-header">Piotr Gaczkowski</h2>
-                    <h3 class="third-header">Creator &#183; Efficiency Hacker &#183; Human Jukebox</h3>
-                    <p class="text-section-paragraph">
-                        Music and automation enthusiast. Focused on efficiency and effectiveness. Experienced in
-                        management, programming, and DevOps. Enjoys building simple solutions to human
-                        problems. Writes occasionally at <a href="https://doomhammer.info" target="_blank">https://doomhammer.info</a>. Speaks of himself in
-                        the third person when required. Never without headphones around. Rarely without sunglasses.
-                        <br /><span>Subscribe me: <a href="http://bitbetter.club/" target="_blank">http://bitbetter.club/</a></span>
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://twitter.com/DoomHammerNG" target="_blank" title="Twitter">
-                            <span class="fab fa-twitter" aria-hidden="true"></span>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                        <a href="https://medium.com/@doomhammerng" target="_blank" title="Medium">
-                            <span class="fab fa-medium-m" aria-hidden="true"></span>
-                            <span class="sr-only">Medium</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/piotrgaczkowski/" target="_blank" title="LinkedIn">
-                            <span class="fab fa-linkedin-in" aria-hidden="true"></span>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </div>
+            <section class="subpages">
+                <div class="subpages-wrapper wrapper">
+                    <h2 class="subpages-second-header">My Medium posts</h2>
+                    <div id="medium-widget"></div>
+                    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+                    <script>
+                        MediumWidget.Init({
+                            renderTo: '#medium-widget',
+                            params: {
+                                "resource": "https://medium.com/@doomhammerng",
+                                "postsPerLine": 3,
+                                "limit": 9,
+                                "picture": "big",
+                                "fields": ["description", "author", "claps", "publishAt"],
+                                "ratio": "square"
+                            }
+                        })
+                    </script>
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer-wrapper wrapper">
+                <div class="social-icons footer-social-icons">
+                    <a href="https://twitter.com/DoomHammerNG" target="_blank" title="Twitter">
+                        <span class="fab fa-twitter" aria-hidden="true"></span>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                    <a href="https://medium.com/@doomhammerng" target="_blank" title="Medium">
+                        <span class="fab fa-medium-m" aria-hidden="true"></span>
+                        <span class="sr-only">Medium</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/piotrgaczkowski/" target="_blank" title="LinkedIn">
+                        <span class="fab fa-linkedin-in" aria-hidden="true"></span>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
