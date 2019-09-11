@@ -190,6 +190,10 @@ body {
     color: var(--base-color);
 }
 
+.show-menu {
+    display: block;
+}
+
 .hamburger {
     padding: 10px;
     display: inline-block;
