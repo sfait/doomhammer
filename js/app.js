@@ -14,15 +14,17 @@ function showMenu() {
 }
 
 function showHamburgerMenu() {
-    const hamburger = document.querySelector(".hamburger");
-    const mainHeader = document.querySelector(".main-header");
-    const menu = document.querySelector(".menu");
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.navigation');
 
-    hamburger.addEventListener("click", function() {
-        hamburger.classList.toggle("active");
-        menu.classList.toggle("show-menu");
-        mainHeader.classList.toggle("hide-header");
-    })
+    const handleClick = () => {
+        hamburger.classList.toggle('hamburger-active');
+        hamburger.setAttribute('aria-expanded', hamburger.classList.contains('hamburger-active'));
+        nav.classList.toggle('navigation-active');
+    }
+
+    hamburger.addEventListener('click', handleClick);
+
 }
 
 const init = () => {
