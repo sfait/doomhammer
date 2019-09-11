@@ -212,6 +212,7 @@ body {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
+    z-index: 6;
 }
 
 .hamburger-box {
@@ -219,6 +220,7 @@ body {
     height: 24px;
     display: inline-block;
     position: relative;
+    z-index: 6;
 }
 
 .hamburger-inner {
