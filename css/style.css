@@ -190,6 +190,10 @@ body {
     color: var(--base-color);
 }
 
+.first-menu:hover .second-menu {
+    display: block;
+}
+
 .show-menu {
     display: block;
 }
