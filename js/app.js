@@ -1,10 +1,20 @@
 function showMenu() {
     const firstMenu = document.querySelectorAll(".first-menu");
-    const secondMenu = document.querySelectorAll(".second-menu");
-
     for (let i = 0; i < firstMenu.length; i++) {
         firstMenu[i].addEventListener("click", function() {
-            this.querySelector(".second-menu").classList.toggle('show-menu');
+            //pokaz lub ukryj
+            const submenu = this.querySelector(".second-menu")
+            submenu.classList.toggle('show-menu');
+        })
+        firstMenu[i].addEventListener("mouseover", function() {
+            //tylko pokaz
+            const submenu = this.querySelector(".second-menu")
+            submenu.classList.add('show-menu');
+        })
+        firstMenu[i].addEventListener("mouseout", function() {
+            //tylko ukryj
+            const submenu = this.querySelector(".second-menu")
+            submenu.classList.remove('show-menu');
         })
     }
 }
