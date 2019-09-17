@@ -1,5 +1,10 @@
+function is_touch_device() {
+    return ("ontouchstart" in document.documentElement)
+}
+
 function showMenu() {
     const firstMenu = document.querySelectorAll(".first-menu");
+
     for (let i = 0; i < firstMenu.length; i++) {
         firstMenu[i].addEventListener("click", function() {
             //pokaz lub ukryj
@@ -7,10 +12,12 @@ function showMenu() {
             submenu.classList.toggle('show-menu');
         })
         firstMenu[i].addEventListener("mouseover", function() {
+            if (is_touch_device()) return;
             //tylko pokaz
             const submenu = this.querySelector(".second-menu")
             submenu.classList.add('show-menu');
         })
+
         firstMenu[i].addEventListener("mouseout", function() {
             //tylko ukryj
             const submenu = this.querySelector(".second-menu")
